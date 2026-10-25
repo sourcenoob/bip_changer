@@ -59,12 +59,12 @@ def smd():
 
     file_name = input('Write file name or his directory:').strip()
 
-    with open(Path(file_name).as_posix(), "r", encoding='utf-8') as f:
+    with open(Path(file_name).as_posix(), "r") as f:
         lines = f.read()
         for old, new in dict.items():
             lines = lines.replace(old, new)
 
-    with open(Path(file_name).as_posix(), "w", encoding='utf-8') as f:
+    with open(Path(file_name).as_posix(), "w") as f:
         f.write(lines)
 
     print('[LOG] All bones name had changed, good luck!')
