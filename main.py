@@ -55,7 +55,7 @@ dict = {
     'bip_toe_R': 'ValveBiped.Bip01_R_Toe0'
 }
 
-def smd():
+def main():
 
     file_name = input('Write file name or his directory:').strip()
 
@@ -68,13 +68,6 @@ def smd():
         f.write(lines)
 
     print('[LOG] All bones name had changed, good luck!')
-
-
-
-
-def main():
-    smd()
-
 
 if __name__ == "__main__":
     main()
